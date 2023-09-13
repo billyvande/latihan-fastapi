@@ -1,0 +1,13 @@
+# Docker Compose file to start PostgreSQL container
+# NOT FOR PRODUCTION
+---
+version: '3'
+
+services:
+  backend:
+    container_name: backend
+    build:
+      context: ./latihan-fastapi
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
